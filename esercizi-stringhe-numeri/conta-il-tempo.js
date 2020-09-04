@@ -12,3 +12,13 @@
 
   http://www.imparareaprogrammare.it
 */
+
+var secondiTotali = 12560
+var secondiOra = 3600;
+var minutiOra = 60;
+var oreSoluzione = Math.round(secondiTotali / secondiOra);
+var decimaleRimanente = 0.48888889;
+var minutiSoluzione = Math.round(decimaleRimanente * minutiOra);
+var decimaleRimanente2 = 0.3333334;
+var secondiSoluzione = Math.round(decimaleRimanente2 * minutiOra);
+console.log(`il totale dei secondi ${secondiTotali} corrisponde a ${oreSoluzione} ore, ${minutiSoluzione} minuti, e ${secondiSoluzione} secondi.`);
