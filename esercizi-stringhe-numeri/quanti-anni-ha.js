@@ -11,3 +11,10 @@
 
   http://www.imparareaprogrammare.it
 */
+
+var currentAge = 2020;
+var birthDate = 1991;
+var year100 = 100;
+var myAge = currentAge - birthDate;
+var for100 = year100 - myAge;
+console.log(`eta = ${myAge} , anni rimanenti = ${for100}`);
