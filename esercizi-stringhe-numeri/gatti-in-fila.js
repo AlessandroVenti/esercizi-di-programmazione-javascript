@@ -17,3 +17,10 @@
 
   http://www.imparareaprogrammare.it
 */
+
+var catsTotal = 5;
+var catsInList = 2;
+var totalList = Math.ceil(catsTotal / catsInList);
+var catsRemaining = totalList * catsInList - catsTotal;
+console.log(`Input : numero di gatti = ${catsTotal}, gatti per fila = ${catsInList}`);
+console.log(`Output : numero di file = ${totalList}, gatti mancanti = ${catsRemaining}`);
