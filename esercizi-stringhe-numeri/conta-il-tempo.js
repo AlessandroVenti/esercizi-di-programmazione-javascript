@@ -21,4 +21,5 @@ var decimaleRimanente = 0.48888889;
 var minutiSoluzione = Math.round(decimaleRimanente * minutiOra);
 var decimaleRimanente2 = 0.3333334;
 var secondiSoluzione = Math.round(decimaleRimanente2 * minutiOra);
-console.log(`il totale dei secondi ${secondiTotali} corrisponde a ${oreSoluzione} ore, ${minutiSoluzione} minuti, e ${secondiSoluzione} secondi.`);
+console.log(` Input : ${secondiTotali}`);
+console.log(` Output : ${oreSoluzione} ore, ${minutiSoluzione} minuti e ${secondiSoluzione} secondi.`);
