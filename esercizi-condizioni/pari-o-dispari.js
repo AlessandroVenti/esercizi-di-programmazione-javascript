@@ -15,3 +15,14 @@
 
   http://www.imparareaprogrammare.it
 */
+
+var x = Math.random();
+var y = x * (100 - 1) +1;
+var z = Math.floor(y);
+var u = z % 2;
+console.log('Numero : ' + z);
+if (u==1) {
+  console.log(u);
+} else if (u==0) {
+  console.log(u);
+}
