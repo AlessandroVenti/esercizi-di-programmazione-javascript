@@ -33,26 +33,35 @@
 var a = 35;
 var b = 47;
 var operazione = 'moltiplicazione';
+
 console.log('primo numero = ' + a + ', secondo numero = ' + b + ' , operazione = ' + operazione);
+
 switch (operazione) {
   case 'somma' :
    console.log(a + b);
-   break;
+  break;
+    
   case 'sottrazione' :
    console.log(a - b);
-   break;
+  break;
+    
   case 'moltiplicazione' :
    console.log(a * b);
-   break;
+  break;
+    
   case 'divisione' :
    console.log(a / b);
-   break;
+  break;
+    
   case 'modulo' :
    console.log(a % b);
-   break;
+  break;
+    
   case 'media' :
    console.log((a + b) / 2);
-   break;
+  break;
+    
   default :
   console.log('Operazione non supportata');
+    
 }
