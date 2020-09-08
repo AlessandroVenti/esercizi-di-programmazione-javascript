@@ -87,3 +87,5 @@ switch (z) {
     
   default :
     console.log('Voto sbagliato');
+    
+}
