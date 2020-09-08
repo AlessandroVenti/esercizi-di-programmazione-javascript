@@ -45,3 +45,19 @@
 
   http://www.imparareaprogrammare.it
 */
+
+
+var totaldays = 30;
+var daysOfWeek = ['Lunedì', 'Martedì','Mercoledì', 'Giovedì', 'Venerdì', 'Sabato', 'Domenica'];
+var days = 0;
+
+do {
+
+  for (var d = 0; d < daysOfWeek.length; d++) {
+      days ++;
+      console.log(`${daysOfWeek[d]} ${days}`);
+        if (days == 30)
+        break;
+    }
+
+} while(days < totaldays);
