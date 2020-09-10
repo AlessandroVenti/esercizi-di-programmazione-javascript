@@ -15,3 +15,17 @@
 
   http://www.imparareaprogrammare.it
 */
+
+
+var n = 6
+var array = [4, 6, 8, 19, 1, 3];
+var array2 = [4, 6, 8, 19, 1, 3];
+array2.reverse();
+
+console.log(`array ottenuto = ${array} , array invertito = ${array2}`);
+
+//Variante senza variabili/array di appoggio
+
+ array.forEach(function reverseNumber1Time(element, index, array) {
+    return index == 0 && console.log(array.reverse());
+});
