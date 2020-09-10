@@ -12,3 +12,18 @@
 
   http://www.imparareaprogrammare.it
 */
+
+
+var array = [3, 5, 10, 2, 8];
+var media = (array[0] + array[1] + array[2] + array[3] + array[4]) / 5;
+
+var minorNumber = array.filter(function minorNumber(element) {
+  return (element < media);
+})
+
+var majorNumber = array.filter(function majorNumber(element) {
+  return (element > media);
+})
+
+console.log(`media = ${media} , valori minori = ${minorNumber}, valori maggiori = ${majorNumber}`);
+console.log(`quantità valori minori della media = ${minorNumber.length}, quantità valori maggiori della media = ${majorNumber.length}`);
