@@ -19,3 +19,48 @@
 
   http://www.imparareaprogrammare.it
 */
+
+
+var n = 10;
+var array1 = [];
+var array2 = [];
+var array3 = [];
+var operazione = 'moltiplicazione';
+
+for (var a = 0; a < n; a++) {
+  array1.push(Math.round(Math.random() * (10-1) + 1));
+  array2.push(Math.round(Math.random() * (10-1) + 1));
+}
+
+console.log('array 1 : ' + array1);
+console.log('array 2 : ' + array2);
+
+switch(operazione) {
+
+  case "addizione" :
+    for ( var b = 0; b < n ; b++) {
+          array3.push(array1[b] + array2[b]);
+     }
+       console.log('addizione = ' + array3);
+       break;
+
+  case "sottrazione" :
+    for ( var b = 0; b < n ; b++) {
+          array3.push(array1[b] - array2[b]);
+   }
+       console.log('sottrazione = ' +array3);
+       break;
+
+  case "moltiplicazione" :
+    for ( var b = 0; b < n ; b++) {
+          array3.push(array1[b] * array2[b]);
+   }
+       console.log('moltiplicazione = ' + array3);
+       break;
+
+  case "divisione" :
+    for ( var b = 0; b < n ; b++) {
+          array3.push(array1[b] - array2[b]);
+   }
+       console.log('divisione = ' + array3);
+ }
