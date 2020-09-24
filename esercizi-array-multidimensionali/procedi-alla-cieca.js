@@ -7,3 +7,10 @@
 
   http://www.imparareaprogrammare.it
 */
+
+var matrice = [];
+  matrice[0] = [Math.round(Math.random() * ((100-1) + 1))];
+  matrice[1] = [Math.round(Math.random() * ((100-1) + 1))];
+  matrice[2] = [Math.round(Math.random() * ((100-1) + 1))];
+  matrice[3] = [Math.round(Math.random() * ((100-1) + 1))];
+console.log(matrice);
