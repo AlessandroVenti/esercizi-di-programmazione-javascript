@@ -11,3 +11,21 @@
     
   http://www.imparareaprogrammare.it
 */
+
+
+var tabellone = [];
+var a = 'x';
+
+for (i = 0; i < 11 ; i++) {
+    a += ' | ' + i;
+    tabellone[i] =[];
+  for (j = 0; j < 11; j++) {
+     tabellone [i][j] = i * j;
+   }
+ }
+
+console.log(a);
+
+for (k = 0; k < 11; k++) {
+    console.log(k + ' | ' + tabellone[k].join(' | '));
+}
