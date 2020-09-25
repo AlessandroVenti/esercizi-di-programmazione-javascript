@@ -17,3 +17,21 @@
 
   http://www.imparareaprogrammare.it
 */
+
+
+var n = 2;
+var m = 3;
+var somma = 0;
+var matrice = [];
+
+
+for (i = 0; i < n; i++) {
+  matrice[i] = [];
+  for (k = 0; k < m; k++) {
+    matrice[i][k] = Math.round(Math.random() * (100 - 1) + 1);
+    somma += matrice[i][k]
+  }
+}
+
+console.log(matrice);
+console.log( 'somma = ' + somma);
