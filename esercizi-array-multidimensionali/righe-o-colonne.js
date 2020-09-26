@@ -21,3 +21,40 @@
 
   http://www.imparareaprogrammare.it
 */
+
+
+var n = 3
+var m = 2
+var somma1 = 0, somma2 = 0, somma3 = 0, somma4 = 0, somma5 = 0;
+var matrice = [];
+var arrayR = [];
+var arrayC = [];
+
+for (i = 0; i < m; i++) {
+   matrice[i] = [];
+   for (j = 0; j < n; j++) {
+     matrice[i][j] = Math.round(Math.random() * (100 - 1) + 1);
+   }
+ }
+
+for (k = 0; k < n; k++) {
+  somma1 += matrice[0][k];
+  somma2 += matrice[1][k];
+}
+
+for (l = 0; l < m; l++) {
+  somma3 += matrice[l][0];
+  somma4 += matrice[l][1];
+  somma5 += matrice[l][2];
+  }
+
+
+arrayR.push(somma1);
+arrayR.push(somma2);
+arrayC.push(somma3);
+arrayC.push(somma4);
+arrayC.push(somma5);
+
+console.log(matrice);
+console.log(arrayR);
+console.log(arrayC);
