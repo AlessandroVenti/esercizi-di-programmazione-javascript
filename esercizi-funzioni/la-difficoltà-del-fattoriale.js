@@ -12,3 +12,18 @@
 
   http://www.imparareaprogrammare.it
 */
+
+
+var n = Math.round(Math.random() * (10 - 1) + 1);
+var fattoriale = 1;
+
+console.log(n);
+
+function factorial(number1) {
+    for (var i = number1 ; i > 0; i = i - 1) {
+        fattoriale = fattoriale * i ;
+       }
+  return console.log(fattoriale);
+}
+
+factorial(n);
