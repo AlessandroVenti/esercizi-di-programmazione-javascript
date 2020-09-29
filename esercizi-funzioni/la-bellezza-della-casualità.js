@@ -8,3 +8,12 @@
 
   http://www.imparareaprogrammare.it
 */
+
+
+var n = 20;
+
+function randomForYou(number1) {
+  return Math.round(Math.random() * (number1 - 0 ) + 0);
+}
+
+console.log(randomForYou(n));
