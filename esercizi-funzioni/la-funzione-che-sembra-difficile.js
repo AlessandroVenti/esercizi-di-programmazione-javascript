@@ -40,7 +40,7 @@ function indexOfNumber(a,element2) {
 }
 
 function middleResult(a,element2) {
-    if (a[k] <= maxNumber) {
+    if (element2 <= maxNumber) {
       indexOfNumber(a,element2);
   } else {
         console.log(0);
