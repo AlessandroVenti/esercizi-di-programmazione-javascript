@@ -24,3 +24,21 @@ for (i = 0; i < days.length; i++){
    }
   }
 }
+
+// usando switch invece di if
+
+var days = [10,-2,-8,22,15,-6,7];
+var max = Math.max(days[0],days[1],days[2],days[3],days[4],days[5],days[6]);
+var min = Math.min(days[0],days[1],days[2],days[3],days[4],days[5],days[6]);
+
+for (i = 0; i < days.length; i++) {
+   switch (days[i]) {
+     case (max) :
+        for (j = 0; j < days.length; j++) {
+          switch (days[j]) {
+            case (min) :
+             console.log(`giornata piu calda: ${days[i]}, giornata piu fredda = ${days[j]}`);
+          }
+        }
+   }
+}
