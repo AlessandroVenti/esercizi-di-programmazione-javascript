@@ -33,3 +33,19 @@ if (a.length==1) {
    console.log('4 cifre');
   
 }
+
+//Metodo senza usare .length
+
+var number = Math.round(Math.random() * (9999 - 1) + 1);
+
+if (0 < number && number < 10) {
+  console.log(`1 cifra`);
+} else if (10 <= number && number < 100) {
+  console.log(`2 cifre`);
+} else if (100 <= number && number < 1000 ) {
+  console.log(`3 cifre`);
+} else if (1000 <= number) {
+  console.log(`4 cifre`);
+}
+
+
