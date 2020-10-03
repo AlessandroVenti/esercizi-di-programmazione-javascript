@@ -48,4 +48,24 @@ if (0 < number && number < 10) {
   console.log(`4 cifre`);
 }
 
+// Metodo con Switch-Case
+
+var number = Math.round(Math.random() * (9999 - 1) + 1);
+var numberString = number.toString();
+console.log(number);
+
+
+switch (numberString.length) {
+  case 1 :
+    console.log(`1 cifra`);
+    break;
+  case 2 :
+    console.log(`2 cifre`);
+    break;
+  case 3 :
+    console.log(`3 cifre`);
+    break;
+  case 4 :
+    console.log(`4 cifre`);
+} 
 
