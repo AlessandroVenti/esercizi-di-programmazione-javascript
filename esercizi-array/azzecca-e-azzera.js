@@ -12,3 +12,31 @@
 
   http://www.imparareaprogrammare.it
 */
+
+var array = [];
+
+for (let i = 0; i < 100; i++) {
+  array.push(Math.round(Math.random() * (50 - 1) + 1));
+}
+
+console.log(array);
+
+function getNumber(number) {
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] % number === 0) {
+      array[i] = 0;
+    }
+  }
+}
+
+function repeatUntil0 (number) {
+  for (let k = 0; k < array.length; k++) {
+    if (array[k] !== 0) {
+      getNumber(Number(prompt('Inserisci Numero...')));
+      k = 0;
+    }
+  }
+  console.log(array);
+}
+
+repeatUntil0();
