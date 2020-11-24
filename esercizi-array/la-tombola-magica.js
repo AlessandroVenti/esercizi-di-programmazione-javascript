@@ -19,3 +19,59 @@
 
   http://www.imparareaprogrammare.it
 */
+
+var casual = [Math.round(Math.random() * (90 - 1) + 1),Math.round(Math.random() * (90 - 1) + 1),Math.round(Math.random() * (90 - 1) + 1),Math.round(Math.random() * (90 - 1) + 1),Math.round(Math.random() * (90 - 1) + 1),Math.round(Math.random() * (90 - 1) + 1),Math.round(Math.random() * (90 - 1) + 1),Math.round(Math.random() * (90 - 1) + 1),Math.round(Math.random() * (90 - 1) + 1),Math.round(Math.random() * (90 - 1) + 1),];
+var mynumbers = [48,76,52,37,8,90,86,29,56,75];
+var count = 0;
+
+
+// Togliere ripetizioni da casual
+for (let i = 0; i < casual.length; i++) {
+  for (let k = 0; k < casual.length; k++) {
+    if (i === k) {
+    }
+    else if (i !== k && casual[i] === casual[k]) {
+      casual[i] = Math.round(Math.random() * (90 - 1) + 1);
+    }
+  }
+}
+
+// numeri che combaciano
+for (let i = 0; i < mynumbers.length; i++) {
+  for (let k = 0; k < casual.length; k++) {
+    if (mynumbers[i] === casual[k]) {
+      count += 1;
+    }
+  }
+}
+
+console.log(mynumbers);
+console.log(casual);
+console.log(count);
+
+switch (count) {
+
+  case 0:
+  case 1:
+     alert(`Hai perso!`);
+     break;
+
+  case 2:
+     alert(`ambo!`);
+     break;
+
+  case 3:
+     alert(`Terna!`);
+     break;
+
+  case 4:
+     alert(`Quaterna!`);
+     break;
+
+  case 5:
+     alert(`Cinquina!`);
+     break;
+
+  case mynumbers.length:
+     alert(`Tombola!`);
+}
